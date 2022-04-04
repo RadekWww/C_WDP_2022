@@ -115,6 +115,13 @@ void fillArrayRandom(int* arr, int len, int scope){
 }
 
 
+void T1_fillArrayRandom(int* arr, int len){
+    srand(time(NULL));
+    for(int i=0; i<len; i++){
+        *(arr+i) = rand();
+    }
+}
+
 int main()
 {
     int a = 5, b = 6,c=7,d =8;
@@ -166,6 +173,9 @@ int main()
     int *arr2 = createArray(n2);
     printArraByPtr(arr2, n2);
     fillArrayRandom(arr2, n2, 10);
+    printArraByPtr(arr2, n2);
+
+    t1_fillArrayRandom(arr2, n2);
     printArraByPtr(arr2, n2);
 
     return 0;
