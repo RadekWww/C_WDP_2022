@@ -110,7 +110,7 @@ int main()
     printArrayByPtr(tab, len2);
 
     free(tab);
-    free(A);
+    //free(A);
 
 
     return 0;
