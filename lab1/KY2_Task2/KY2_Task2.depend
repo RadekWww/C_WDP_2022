@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1650469323 source:c:\projects\c_wdp_2022\lab2\ky2_task2\main.c
+	<stdio.h>
+	<stdlib.h>
+

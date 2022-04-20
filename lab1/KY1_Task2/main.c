@@ -61,13 +61,13 @@ int* createArrayByCalloc(int len2){
 }
 
 
-void setArray(int* ptrA, int len, int value){
+void t3setArray(int* ptrA, int len, int value){
     for(int i=0; i < len; i++){
         *(ptrA + i) = value;
     }
 }
 
-void setArrayByRandom(int* ptrA, int len, int scope){
+void t4setArrayByRandom(int* ptrA, int len, int scope){
     for(int i=0; i < len; i++){
         *(ptrA + i) = (rand() % scope) +1 ;
     }
