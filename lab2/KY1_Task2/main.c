@@ -59,7 +59,6 @@ void printBox2ByPtr(Box2* b){
 Box2* createBox2(){
     printf("createBox2...\n");
     Box2* b = (Box2*)malloc(sizeof(Box2));
-    //printf("sizeof %d", sizeof(b) );
     b->len = 0;
 
     if(b == NULL)
@@ -82,6 +81,7 @@ int getAndPrintEvenNumberFromBox2(Box2 b)
         }
     }
     printf("evenNumber=%d\n", evenNumber);
+    return evenNumber;
 }
 
 
@@ -93,6 +93,7 @@ int main()
     box0.len = 0;
 
     Box2 box1 = { .arr= { 0 }, .len= 5 };
+
 
     addXToBox2(&box0, 1);
     addXToBox2(&box0, 4);
