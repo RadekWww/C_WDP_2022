@@ -37,6 +37,8 @@ int main()
     char s3[] = "test nr2";
 
     printStrings(s1);
+
+    //wyswietlanie wiekszej liczby znakow, bo string s2 nie posiada znaku konca lini..
     printStrings(s2);
     printStrings(s3);
 
