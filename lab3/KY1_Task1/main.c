@@ -45,13 +45,14 @@ void addToTail(Node** head, int newValue)
     Node* newElement = (Node*) malloc(sizeof(Node));
     newElement->num = newValue;
     newElement->ptr = NULL;
+    Node* current = *head;
 
     if((*head) == NULL)
     {
         (*head) = newElement;
     }
     else{
-        Node* current = *head;
+
         while(current->ptr != NULL)
         {
             current = current->ptr;
@@ -60,6 +61,24 @@ void addToTail(Node** head, int newValue)
     }
 }
 
+void append(Node** head_ref, int new_data)
+{
+    Node* new_node = ( Node*) malloc(sizeof( Node));
+    Node *last = *head_ref;
+
+    new_node->num  = new_data;
+    new_node->ptr = NULL;
+
+    if (*head_ref == NULL)
+    {
+       *head_ref = new_node;
+       return;
+    }
+    while (last->ptr != NULL)
+        last = last->ptr;
+    last->ptr = new_node;
+    return;
+}
 
 int main()
 {
@@ -166,10 +185,10 @@ int main()
 
      show(head);
 
+     append(&head,11);
+
      addToTail(&head, 1);
      addToTail(&head, 2);
-
-
      show(head);
 
     return 0;
