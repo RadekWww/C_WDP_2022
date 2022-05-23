@@ -10,7 +10,6 @@ typedef struct node {
 
 Node* addHeadWithReturn( Node* head, int newValue )
 {
-
     Node* newNode = (Node*) malloc(sizeof(Node));
 
     newNode->num = newValue;
@@ -53,6 +52,7 @@ void display( Node* head )
         printf("%d ", current->num);
 
         current = current->next;
+
     }
     printf( "\n");
 
