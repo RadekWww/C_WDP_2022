@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1654093701 source:c:\projects\c_wdp_2022\lab4\y2_task1\main.c
+	<stdio.h>
+	<stdlib.h>
+
